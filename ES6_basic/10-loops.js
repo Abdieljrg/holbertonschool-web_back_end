@@ -12,4 +12,3 @@ export default function appendToEachArrayValue(array, appendString) {
     // Return new array with modified values
     return newArray;
   }
-  

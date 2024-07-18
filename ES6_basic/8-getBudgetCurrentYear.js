@@ -19,4 +19,3 @@ function getCurrentYear() {
     // Return budget object
     return budget;
   }
-  

@@ -10,4 +10,3 @@ export default function getBudgetObject(income, gdp, capita) {
     // Return budget object
     return budget;
   }
-  
