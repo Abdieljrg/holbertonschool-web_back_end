@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""async genereitooor"""
+"""async"""
 import asyncio
 import random
 
