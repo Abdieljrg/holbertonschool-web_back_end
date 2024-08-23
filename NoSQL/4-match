@@ -1,0 +1,2 @@
+// search for specific databasse
+db.school.find({ name: "Holberton school" })
