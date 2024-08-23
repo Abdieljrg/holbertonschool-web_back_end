@@ -4,15 +4,15 @@ from pymongo import MongoClient
 
 
 def log_stats():
-    """provides stats about Nginx logs stored inside MongoDB."""
+    """function provides stats about Nginx logs stored in MongoDB."""
     client = MongoClient('mongodb://127.0.0.1:27017')
     nginx_collection = client.logs.nginx
 
-    # count number on logs
+    # count number of logs
     log_count = nginx_collection.count_documents({})
     print(f"{log_count} logs")
 
-    # count HTTP methods
+    # count by HTTP methods
     methods = ["GET", "POST", "PUT", "PATCH", "DELETE"]
     print("Methods:")
     for method in methods:
@@ -25,3 +25,4 @@ def log_stats():
 
 if __name__ == "__main__":
     log_stats()
+    
